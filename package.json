@@ -11,7 +11,22 @@
     "build": "turbo build",
     "check-types": "turbo check-types",
     "dev:native": "turbo -F native dev",
-    "dev:web": "turbo -F web dev"
+    "dev:web": "turbo -F web dev",
+    "server:start": "pnpm -F server start",
+    "server:build": "pnpm -F server build",
+    "server:dev": "pnpm -F server dev",
+    "server:test": "pnpm -F server test",
+    "server:lint": "pnpm -F server lint",
+    "server:format": "pnpm -F server format",
+    "server:typecheck": "pnpm -F server typecheck",
+    "server:db:seed": "pnpm -F server exec node ace db:seed",
+    "server:db:wipe": "pnpm -F server exec node ace db:wipe",
+    "server:migration:fresh": "pnpm -F server exec node ace migration:fresh",
+    "server:migration:run": "pnpm -F server exec node ace migration:run",
+    "server:migration:rollback": "pnpm -F server exec node ace migration:rollback",
+    "server:migration:status": "pnpm -F server exec node ace migration:status",
+    "server:list:routes": "pnpm -F server exec node ace list:routes",
+    "server:generate:key": "pnpm -F server exec node ace generate:key"
   },
   "dependencies": {},
   "devDependencies": {
